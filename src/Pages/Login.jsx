@@ -8,7 +8,7 @@ const Login = () => {
 
   const {userSingIn}=useContext(AuthContext)
   const [emailError, setEmailError] = useState('');
-  const [passwordError, setPasswordError] = useState('');
+ 
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -26,13 +26,11 @@ const Login = () => {
     // Password Validation
     const passwordAuth = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$/;
     if (!passwordAuth.test(password)) {
-      
-      setPasswordError('Password must be at least 8 characters long and include letters, numbers, and special characters.');
+      toast.error('password does not match')
+     
       return;
     }
-    else {
-      setPasswordError('');
-    }
+   
 
     // If both email and password are valid, you can proceed with the login logic.
     console.log('Email:', email);
@@ -41,9 +39,17 @@ const Login = () => {
     userSingIn(email,password)
     .then(res=>{
       console.log(res)
+      toast.success("successfully login")
     })
     .catch(error=>{
       console.log(error)
+      if (error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password') {
+       
+        toast.error('Invalid email or password. Please try again.');
+      } else {
+        
+        toast.error('An error occurred during login.');
+      }
     })
 
     
@@ -84,9 +90,7 @@ const Login = () => {
                   className="input input-bordered"
                   required
                 />
-                {passwordError && (
-                  <p className="text-xs text-red-600">{passwordError}</p>
-                )}
+               
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?

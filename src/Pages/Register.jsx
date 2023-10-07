@@ -2,12 +2,22 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import GoogleLogin from './GoogleLogin/GoogleLOgin';
 import { AuthContext } from '../Components/AuthProvider/Authprovider';
+import toast from 'react-hot-toast';
+
+import swal from 'sweetalert';
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css"
+/>
+
+
 
 const Register = () => {
 
   const {userSingUp}=useContext(AuthContext)
   const [emailError, setEmailError] = useState('');
-  const [passwordError, setPasswordError] = useState('');
+  // const [passwordError, setPasswordError] = useState('');
 
     const handleRegister=(e)=>{
         e.preventDefault()
@@ -28,20 +38,22 @@ const Register = () => {
         const passwordAuth = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$/;
         if (!passwordAuth.test(password)) {
           
-          setPasswordError('Password must be at least 8 characters long and include letters, numbers, and special characters.');
+         
+          // setPasswordError('Password must be at least 8 characters long and include letters, numbers, and special characters.');
+          toast.error("Password must be at least 8 characters long and include letters, numbers, and special characters.")
           return;
         }
-        else {
-          setPasswordError('');
-        }
+       
 
         userSingUp(email,password)
         .then(res=>{
           console.log(res)
+          toast.success('Registration successful!');
 
         })
         .catch(error=>{
-          console.log
+          console.log(error)
+          
         })
     
     }
@@ -75,9 +87,7 @@ const Register = () => {
             <span className="label-text">Password</span>
           </label>
           <input type="password" placeholder="password" name='password' className="input input-bordered" required />
-          {passwordError && (
-                  <p className="text-xs text-red-600">{passwordError}</p>
-                )}
+        
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>

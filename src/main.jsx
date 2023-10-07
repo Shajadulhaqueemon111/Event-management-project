@@ -12,6 +12,7 @@ import Home from './Pages/Home';
 import Register from './Pages/Register';
 import Login from './Pages/Login';
 import Authprovider from './Components/AuthProvider/Authprovider';
+import CourseDetails from './Pages/Details/CourseDetails';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path:'/register',
         element:<Register></Register>        
+      },
+      {
+        path:'/details/:id',
+        element:<CourseDetails></CourseDetails>       
       },
     ]
   },

@@ -10,7 +10,8 @@ const Navbar = () => {
     const navLink=<>
     
     <li><NavLink to='/'>Home</NavLink></li>
-    <li><NavLink to='/game details'>Game details</NavLink></li>
+    <li><NavLink to='/about'>About</NavLink></li>
+    <li><NavLink to='/courses'>Courses</NavLink></li>
     <li><NavLink to='/login'>Login</NavLink></li>
     <li><NavLink to='/register'>Register</NavLink></li>
     
@@ -37,8 +38,8 @@ const Navbar = () => {
        
       </ul>
     </div>
-    <a className="btn btn-secondary normal-case text-xl">
-      <img className='text-blue-300' src={logo} alt="" />
+    <a className="btn btn-gost normal-case text-xl font-bold">
+    Educational Conferences
     </a>
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -47,14 +48,39 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-  {
+  {/* {
               user?<button onClick={handelLogOut} className='btn btn-secondary'>Sing-Out</button>:
             
           <Link to='/login'>
           <button  className='btn btn-secondary'>Login</button>
           </Link>
-               }
-               {/* <button className='btn btn-accent'>Login</button> */}
+               } */}
+                {
+                        user?.email ? <div className="dropdown dropdown-end">
+                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full">
+                                    <img src={user.photoURL} alt={user.displayName} />
+                                </div>
+                            </label>
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li>
+                                    <p >{user.displayName}</p>
+
+                                </li>
+                                <li>
+
+                                    <button onClick={handelLogOut} className="btn btn-sm mt-5  btn-secondary">Logout</button>
+
+                                </li>
+                            </ul>
+                        </div>
+                            :
+                            <Link to='/login'>
+                                <button className="btn btn-sm  btn-ghost">Login</button>
+                            </Link>
+                    }
+               
+              
   </div>
 </div>
         </div>

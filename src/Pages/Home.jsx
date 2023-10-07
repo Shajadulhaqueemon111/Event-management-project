@@ -1,11 +1,15 @@
 import React from 'react';
 import Banner from './BannerPage/Banner';
+import Course from '../Components/CourseList/Course';
+import Footer from '../Components/Footer/Footer';
 
 const Home = () => {
     return (
         <div>
              <Banner></Banner>
-            <h2>This is Home</h2>
+           <Course></Course>
+           
+           
         </div>
     );
 };
