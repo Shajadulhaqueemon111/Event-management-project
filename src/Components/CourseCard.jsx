@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the CSS for AOS
 import { Link } from 'react-router-dom';
 import { ImLocation } from 'react-icons/im';
+import Footer from './Footer/Footer';
 
 const CourseCard = ({ allCourse }) => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const CourseCard = ({ allCourse }) => {
 
   return (
     <div className='w-96 mx-auto'>
+       
       <div className="card card-compact bg-base-100 shadow-xl" data-aos="fade-up">
         <figure><img src={image} alt="Shoes" /></figure>
         <div className="card-body">
@@ -24,6 +26,7 @@ const CourseCard = ({ allCourse }) => {
           <div className="card-actions justify-end">
             <button className="btn btn-primary"><Link to={`/details/${id}`}>Course Details</Link></button>
           </div>
+         
         </div>
       </div>
     </div>

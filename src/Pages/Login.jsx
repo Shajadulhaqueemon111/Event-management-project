@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import toast from 'react-hot-toast';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import GoogleLogin from './GoogleLogin/GoogleLOgin';
 import { AuthContext } from '../Components/AuthProvider/Authprovider';
 
@@ -8,8 +8,10 @@ const Login = () => {
 
   const {userSingIn}=useContext(AuthContext)
   const [emailError, setEmailError] = useState('');
- 
+  const location=useLocation()
+ const navigate=useNavigate()
 
+ console.log(location)
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -36,10 +38,13 @@ const Login = () => {
     console.log('Email:', email);
     console.log('Password:', password);
    
-    userSingIn(email,password)
+    userSingIn(email,password)  
     .then(res=>{
       console.log(res)
       toast.success("successfully login")
+      navigate(location?.state?location.state:'/')
+      // const previousPath = location?.state?.from || '/';
+      // navigate(previousPath);
     })
     .catch(error=>{
       console.log(error)
@@ -48,7 +53,7 @@ const Login = () => {
         toast.error('Invalid email or password. Please try again.');
       } else {
         
-        toast.error('An error occurred during login.');
+        toast.error('Firebase: Error(auth/invalid-login-credentials)');
       }
     })
 

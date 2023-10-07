@@ -13,6 +13,7 @@ import Register from './Pages/Register';
 import Login from './Pages/Login';
 import Authprovider from './Components/AuthProvider/Authprovider';
 import CourseDetails from './Pages/Details/CourseDetails';
+import PrivateRoute from './Components/PrivateRoute';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/details/:id',
-        element:<CourseDetails></CourseDetails>       
+        element:<PrivateRoute><CourseDetails></CourseDetails> </PrivateRoute>      
       },
     ]
   },
