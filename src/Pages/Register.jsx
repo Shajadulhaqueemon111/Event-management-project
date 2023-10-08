@@ -45,7 +45,7 @@ const Register = () => {
         }
        
 
-        userSingUp(email,password)
+        userSingUp(email,password)   
         .then(res=>{
           console.log(res)
           toast.success('Registration successful!');

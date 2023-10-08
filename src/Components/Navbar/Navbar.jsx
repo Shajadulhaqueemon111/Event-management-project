@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/logo-text.png'
 import { AuthContext } from '../AuthProvider/Authprovider';
 import { auth } from '../Firebase.config';
+import './Navbar.css'; 
 const Navbar = () => {
 
   const {UsersingOut,user}=useContext(AuthContext)
@@ -10,8 +11,8 @@ const Navbar = () => {
     const navLink=<>
     
     <li><NavLink to='/'>Home</NavLink></li>
+    <li><NavLink to='/apply-courses'>Applyed Details</NavLink></li>
     <li><NavLink to='/about'>About</NavLink></li>
-    <li><NavLink to='/courses'>Courses</NavLink></li>
     <li><NavLink to='/login'>Login</NavLink></li>
     <li><NavLink to='/register'>Register</NavLink></li>
     
@@ -26,8 +27,8 @@ const Navbar = () => {
         })
       }
     return (
-        <div>
-            <div className="navbar bg-base-100">
+        <div className='glass-bg'>
+            <div className="navbar bg-base-100   ">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -59,12 +60,12 @@ const Navbar = () => {
                         user?.email ? <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                    <img src={user.photoURL} alt={user.displayName} />
+                                    <img src="https://lh3.googleusercontent.com/a/ACg8ocJOY0BBgN_Sft0Kih19fAqmbHgLIW6a3CkwWLXfcXC28bQ=s96-c" alt={user.displayName} />
                                 </div>
                             </label>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                                 <li>
-                                    <p >{user.displayName}</p>
+                                    <p >MdShajdul Haque Emon</p>
 
                                 </li>
                                 <li>

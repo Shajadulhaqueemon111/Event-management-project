@@ -1,0 +1,10 @@
+/* Navbar.css */
+
+.glass-bg {
+  background: rgba(255, 255, 255, 0.2); /* Adjust the transparency here */
+  backdrop-filter: blur(10px); /* Adjust the blur amount here */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  /* Other styles for your Navbar */
+}

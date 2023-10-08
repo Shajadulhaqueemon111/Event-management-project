@@ -10,7 +10,7 @@ const CourseCard = ({ allCourse }) => {
     AOS.init(); // Initialize AOS
   }, []);
 
-  const { id, image, course_title, location, price } = allCourse;
+  const { id, image, course_title, location, price,Benifits} = allCourse;
 
   return (
     <div className='w-96 mx-auto'>
@@ -19,12 +19,13 @@ const CourseCard = ({ allCourse }) => {
         <figure><img src={image} alt="Shoes" /></figure>
         <div className="card-body">
           <h2 className="card-title">{course_title}</h2>
+          <h2>{Benifits}</h2>
           <div className='flex'>
           <p className=' font-bold flex font-xl'><ImLocation className='text-xl'></ImLocation>{location}</p>
           <p className='font-bold'>{price}</p>
           </div>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary"><Link to={`/details/${id}`}>Course Details</Link></button>
+            <button className="btn btn-primary"><Link to={`/details/${id}`}>View Details</Link></button>
           </div>
          
         </div>

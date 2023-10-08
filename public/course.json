@@ -2,22 +2,26 @@
      {
       "id": 1,
       "image": "https://i.ibb.co/XbxfZVx/download-3.jpg",
-      "course_title": "Web Development Courses",
-      
-     
+      "course_title": "Web Development ",
       "location": "Nework,America",
-      "price":"$440"
+      "Benifits":"Compared to traditional brick-and-mortar businesses, setting up and maintaining a website is often more cost-effective",
+      "price":"$440",
+      "course_description":"A web development course teaches you how to create websites and web applications. It covers essential topics like HTML, CSS, and JavaScript for front-end development, along with back-end technologies like databases and server-side scripting. You'll learn how to design responsive, user-friendly websites and gain practical experience through hands-on projects. By the end of the course, you'll have the skills needed to build and launch your own web projects or pursue a career as a web developer.",
     
-      
+      "email":"mdEmon@gmail.com",
+      "Phone_number":"+6859680-68509"
     },
     
       {
         "id": 2,
         "image": "https://i.ibb.co/ZTv1txk/images-1.jpg",
-        "course_title": "Learn Basic German Fast Courses",
+        "course_title": "Learn Basic German Fast ",
         "location": "jakson,America",
-        "price":"$340"
-      
+        "price":"$340",
+        "Benifits":"It allows you to communicate with German speakers, fostering connections and opportunities for travel or business",
+        "course_description":"A Learn Basic German Fast course is an intensive program designed to provide a foundational understanding of the German language in a short timeframe. It focuses on essential vocabulary, grammar, and conversational skills to help students communicate effectively in everyday situations. Through interactive lessons and practice, students can quickly acquire the fundamentals of German, making it ideal for those seeking a basic grasp of the language for travel or personal enrichment.",
+        "email":"mdEmon@gmail.com",
+        "Phone_number":"+6859680-68509"
       },
       {
         
@@ -25,34 +29,51 @@
           "image": "https://i.ibb.co/Lz5LgNS/download.jpg",
           "course_title": "Basic Time Use Properly",
           "location": "Nework,America",
-          "price":"$240"
+          "Benifits":"Proper time management allows you to accomplish more tasks in less time, boosting your productivity and reducing stress.",
+          "price":"$240",
+          "course_description":"A Basic Time Use Properly course is a concise training program that teaches effective time management skills. It covers principles like setting goals, prioritizing tasks, and creating schedules to maximize productivity. Participants learn how to optimize their use of time for personal and professional success, making it an invaluable course for those seeking better organization and efficiency in their daily lives.",
+          "email":"mdEmon@gmail.com",
+      "Phone_number":"+6859680-68509"
         
       },
       {
         
           "id": 4,
           "image": "https://i.ibb.co/SPrSMMM/download-2.jpg",
-          "course_title": "Cyber Security Courses",
+          "course_title": "Cyber Security Benifit",
           "location": "Nework,America",
-          "price":"$190"
+          "Benifits":" It safeguards sensitive information from unauthorized access, ensuring the confidentiality and integrity of valuable data.",
+          "price":"$190",
+          "course_description":"Cybersecurity courses educate individuals on protecting digital systems, networks, and data from cyber threats. They cover topics such as threat detection, encryption, ethical hacking, and risk management. These courses equip students with the skills needed to secure information and defend against cyberattacks, making them valuable for IT professionals and organizations concerned about online security.",
+          "email":"mdEmon@gmail.com",
+      "Phone_number":"+6859680-68509"
+
         
       },
       {
         
           "id": 5,
           "image": "https://i.ibb.co/mXXXDQt/download-5.jpg",
-          "course_title": "Block Chaining Courses",
+          "course_title": "Block Chaining ",
           "location": "Nework,America",
-          "price":"$160"
+          "price":"$160",
+          "Benifits":"Its decentralized and cryptographic nature enhances data security, reducing the risk of fraud and unauthorized tampering.",
+          "course_description":"Blockchain courses provide in-depth knowledge about the technology behind cryptocurrencies and decentralized systems. They cover topics like blockchain architecture, cryptography, smart contracts, and distributed ledger technology. These courses are essential for those looking to understand and work with blockchain applications in various industries.",
+          "email":"mdEmon@gmail.com",
+      "Phone_number":"+6859680-68509"
         
       },
       {
         
           "id": 6,
           "image": "https://i.ibb.co/Jx9MdtQ/download-1.jpg",
-          "course_title": "AI Courses",
+          "course_title": "Artificial Intelligence",
           "location": "Nework,America",
-          "price":"$170"
+          "price":"$170",
+          "Benifits":" AI automates repetitive tasks, improving efficiency and freeing up human resources for more creative and strategic work.",
+          "course_description":"AI courses offer comprehensive instruction in artificial intelligence, covering topics such as machine learning, neural networks, natural language processing, and computer vision. These courses provide the skills and knowledge needed to develop AI applications and algorithms, making them valuable for professionals seeking to work in AI research, development, or application across various industries.",
+          "email":"mdEmon@gmail.com",
+      "Phone_number":"+6859680-68509"
         
       }
   

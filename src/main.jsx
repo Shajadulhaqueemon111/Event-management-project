@@ -11,9 +11,12 @@ import Error from './Components/ErrorPage/Error';
 import Home from './Pages/Home';
 import Register from './Pages/Register';
 import Login from './Pages/Login';
+
 import Authprovider from './Components/AuthProvider/Authprovider';
 import CourseDetails from './Pages/Details/CourseDetails';
 import PrivateRoute from './Components/PrivateRoute';
+import ApplyedCourse from './Pages/ApplyedCourse';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,8 +36,15 @@ const router = createBrowserRouter([
         element:<Register></Register>        
       },
       {
+        path:'/apply-courses',
+        element:<PrivateRoute><ApplyedCourse></ApplyedCourse></PrivateRoute>,
+        loader:()=>fetch('/course.json')       
+      },
+      {
         path:'/details/:id',
-        element:<PrivateRoute><CourseDetails></CourseDetails> </PrivateRoute>      
+        element:<PrivateRoute><CourseDetails></CourseDetails> </PrivateRoute>,
+        loader:()=>fetch('../course.json')
+              
       },
     ]
   },
