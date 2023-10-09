@@ -16,7 +16,7 @@ const AboutDetails = () => {
         <div>
            <div className='mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
            {
-            aboutCard.map(About=><AboutCard key={About.id} About={About}></AboutCard>)
+            aboutCard.map(About=><AboutCard  About={About}></AboutCard>)
                 
             }
            </div>

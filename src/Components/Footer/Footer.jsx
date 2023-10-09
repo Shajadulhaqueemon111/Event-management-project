@@ -6,10 +6,13 @@ const Footer = () => {
             <footer className="footer p-10 bg-base-200 text-base-content">
   <aside>
     
-    <p><span className='text-xl font-bold'>About Education</span><br/><br/>EDUTECH Mistaken idea of denouncing <br />
-    pleaser and prasing pain was born and I will <br />
-    give you a complete account of the system. <br />
-    and expound the actual teaching of the great explore</p>
+    <p><span className='text-xl font-bold'>About Training</span><br/><br/> 
+    Training programs play a crucial role in our lives. <br /> They pave the way for our professional and personal development. <br /> These training programs are designed for various categories of people, <br />including students, professionals, and workers, providing <br />opportunities for skill enhancement.<br />
+    <br />
+   </p>
+   <br />
+   <p className='text-center mx-auto 
+   '>Copyright © 2023 - All right reserved</p>
   </aside> 
   <nav>
     <header className="footer-title text-font text-xl text-black">Services</header> 
@@ -31,7 +34,9 @@ const Footer = () => {
     <a className="link link-hover">Privacy policy</a> 
     <a className="link link-hover">Cookie policy</a>
   </nav>
+
 </footer>
+
         </div>
     );
 };

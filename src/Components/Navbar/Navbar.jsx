@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../assets/logo-text.png'
+
 import { AuthContext } from '../AuthProvider/Authprovider';
 import { auth } from '../Firebase.config';
 import './Navbar.css'; 
@@ -12,7 +12,7 @@ const Navbar = () => {
     
     <li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/apply-courses'>Applyed Details</NavLink></li>
-    <li><NavLink to='/about'>About</NavLink></li>
+    <li><NavLink to='/about'>Blog</NavLink></li>
     <li><NavLink to='/login'>Login</NavLink></li>
     <li><NavLink to='/register'>Register</NavLink></li>
     
