@@ -11,8 +11,7 @@ const Footer = () => {
     <br />
    </p>
    <br />
-   <p className='text-center mx-auto 
-   '>Copyright © 2023 - All right reserved</p>
+  
   </aside> 
   <nav>
     <header className="footer-title text-font text-xl text-black">Services</header> 
@@ -36,7 +35,8 @@ const Footer = () => {
   </nav>
 
 </footer>
-
+<p className='text-center mx-auto 
+   '>Copyright © 2023 - All right reserved</p>
         </div>
     );
 };
