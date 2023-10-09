@@ -16,6 +16,7 @@ import Authprovider from './Components/AuthProvider/Authprovider';
 import CourseDetails from './Pages/Details/CourseDetails';
 import PrivateRoute from './Components/PrivateRoute';
 import ApplyedCourse from './Pages/ApplyedCourse';
+import AboutDetails from './Pages/About details';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
         path:'/details/:id',
         element:<PrivateRoute><CourseDetails></CourseDetails> </PrivateRoute>,
         loader:()=>fetch('../course.json')
+              
+      },
+      {
+        path:'/about',
+        element:<PrivateRoute><AboutDetails></AboutDetails></PrivateRoute>
               
       },
     ]

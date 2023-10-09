@@ -40,7 +40,8 @@ const Navbar = () => {
       </ul>
     </div>
     <a className="btn btn-gost normal-case text-xl font-bold">
-    Educational Conferences
+      <h2 className='text-xl font-bold'>Training <span className='text-blue-500'>Programs</span></h2>
+    {/* <img className='h-20 w-30' src="https://i.ibb.co/V3mdKXX/images-5.jpg" alt="" /> */}
     </a>
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -49,13 +50,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-  {/* {
-              user?<button onClick={handelLogOut} className='btn btn-secondary'>Sing-Out</button>:
-            
-          <Link to='/login'>
-          <button  className='btn btn-secondary'>Login</button>
-          </Link>
-               } */}
+  
                 {
                         user?.email ? <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

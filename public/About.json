@@ -1,0 +1,85 @@
+
+    [
+      {
+        "courseName": "Mobile App Development",
+        "description": "This intensive bootcamp covers HTML, CSS, JavaScript, and more. Get hands-on experience to become a web developer.",
+        "duration": "12 weeks",
+        "price": 999.99,
+        "image":"https://i.ibb.co/tcxYWHc/download-10.jpg",
+        "instructor": "John Smith",
+        "startDate": "2023-11-01",
+        "enrollmentStatus": "Open"
+      },
+      {
+        "courseName": "Digital Marketing Fundamentals",
+        "description": "Learn the basics of digital marketing, including SEO, social media, and email marketing.",
+        "duration": "6 weeks",
+        "price": 499.99,
+        "image":"https://i.ibb.co/5LsJVjL/download-11.jpg",
+        "instructor": "Emily Johnson",
+        "startDate": "2023-10-15",
+        "enrollmentStatus": "Closed"
+      },
+      {
+        "courseName": "Data Science Essentials",
+        "description": "Explore data analysis, machine learning, and data visualization in this comprehensive course.",
+        "duration": "10 weeks",
+        "price": 799.99,
+        "image":"https://i.ibb.co/Rhmh6xd/download-12.jpg",
+        "instructor": "David Brown",
+        "startDate": "2023-11-15",
+        "enrollmentStatus": "Open"
+      },
+      {
+        "courseName": "Business Ethics and Corporate Responsibility",
+        "description": "Examine ethical dilemmas in business and learn to make responsible decisions.",
+        "duration": "6 weeks",
+        "price": 499.99,
+        "instructor": "Michael Brown",
+        "image":"https://i.ibb.co/WvCC25N/download-13.jpg",
+        "startDate": "2024-04-20",
+        "enrollmentStatus": "Open"
+      },
+      {
+        "courseName": "Advanced JavaScript Development",
+        "description": "Deepen your JavaScript knowledge and work on complex web applications.",
+        "duration": "10 weeks",
+        "price": 799.99,
+        "instructor": "Linda Wilson",
+        "image":"https://i.ibb.co/TPqzZP4/download.png",
+        "startDate": "2024-05-10",
+        "enrollmentStatus": "Open"
+      },
+      {
+        "courseName": "Digital Illustration Workshop",
+        "description": "Create stunning digital illustrations with professional techniques and tools.",
+        "duration": "8 weeks",
+        "price": 599.99,
+        "instructor": "Daniel Clark",
+        "image":"https://i.ibb.co/gtyzsT8/download-14.jpg",
+        "startDate": "2024-06-01",
+        "enrollmentStatus": "Open"
+      },
+      {
+        "courseName": "Environmental Sustainability ",
+        "description": "Explore sustainability practices and environmental conservation strategies.",
+        "duration": "12 weeks",
+        "price": 799.99,
+        "instructor": "Olivia Green",
+        "image":"https://i.ibb.co/QDR4vMq/download-15.jpg",
+        "startDate": "2024-07-15",
+        "enrollmentStatus": "Open"
+      },
+      {
+        "courseName": "UX/UI Design for Mobile Apps",
+        "description": "Design user-friendly and visually appealing mobile apps with a focus on UX/UI.",
+        "duration": "14 weeks",
+        "price": 999.99,
+        "image":"https://i.ibb.co/xMMMK4w/download-16.jpg",
+        "instructor": "Ethan Adams",
+        "startDate": "2024-08-10",
+        "enrollmentStatus": "Open"
+      }
+    ]
+  
+  
